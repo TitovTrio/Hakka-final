@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    width: 100%;
+    padding: 2rem;
+    
+}
+
+.menu {
+    position: fixed;
+    z-index: 1000;
+    width: 150px;
+    background: #1b1a1a;
+    border-radius: 5px;
+    display: none;
+    list-style: none;
+}
+
+.menu.open {
+    display: block;
+}
+
+.menu .menu-item {
+    padding: 8px 10px;
+    font-size: 1rem;
+    color: #eee;
+    cursor: pointer;
+    transition: background-color .2s ease-in;
+    border-radius: inherit;
+}
+
+.menu .menu-item:hover {
+    background: #343434;
+}
+
+.module {
+    margin: auto;
+}
+
+.messageBlock {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #e7e7e7; 
+    border: 3px solid #7e7e7e; 
+    height: 150px;
+    width: 300px;
+    padding: 10px;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.messageBlock + .messageBlock { 
+    margin-bottom: 10px; 
+}
+
+.timerBlock {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: #e7e7e7; 
+    border: 3px solid #7e7e7e; 
+    height: 75px;
+    width: 200px;
+    padding: 10px;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.closeTimerButton {
+    background-color: #ff5555;
+    color: #fff;
+    margin-top: 10px;
+    cursor: pointer;
+    height: 20px;
+    width: 100px;
+}
+
+
+.closeTimerButton:hover {
+    background-color: #cc0000;
+}
+
+
